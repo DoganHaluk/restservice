@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/filialen")
 @ExposesResourceFor(Filiaal.class)
+@CrossOrigin(exposedHeaders = "Location")
 class FiliaalController {
     private final FiliaalService filiaalService;
     private final TypedEntityLinks.ExtendedTypedEntityLinks<Filiaal> links;

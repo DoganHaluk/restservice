@@ -42,8 +42,8 @@ class FiliaalControllerTest extends AbstractTransactionalJUnit4SpringContextTest
     }
 
     @Test
-    void nieuweFiliaalToevoegen() throws Exception{
-        String jsonBody="{\"naam\":\"Filiaal\", \"gemeente\":\"Gemeente\", \"omzet\":1}";
+    void nieuweFiliaalToevoegen() throws Exception {
+        String jsonBody = "{\"naam\":\"Filiaal\", \"gemeente\":\"Gemeente\", \"omzet\":1}";
         mvc.perform(post("/filialen")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(jsonBody))
